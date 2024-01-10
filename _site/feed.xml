@@ -1,0 +1,105 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Menna</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2024-01-10T12:36:14-03:00</updated>
+  <author>
+    <name>Bruno Menna</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2024 Bruno Menna </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>How to improve the search in Shodan</title>
+    <link href="http://localhost:4000/posts/facets-search/" rel="alternate" type="text/html" title="How to improve the search in Shodan" />
+    <published>2024-01-01T04:30:00-03:00</published>
+  
+    <updated>2024-01-01T04:30:00-03:00</updated>
+  
+    <id>http://localhost:4000/posts/facets-search/</id>
+    <content src="http://localhost:4000/posts/facets-search/" />
+    <author>
+      <name>Bruno Menna</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Shodan is a well-known recon tool, but in larger scopes, it has so many results that it’s hard to find something useful.
+
+
+
+In this image searching for hostnames from Microsoft we got +100k results. It would be a TON of work going through 20 pages of results trying to find something.
+
+ That's when the 'facets' search comes into play
+
+Facets are a set of filters, that can help with your search. ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Some handy notes for GCP pentesting</title>
+    <link href="http://localhost:4000/posts/gcp-pentesting-notes/" rel="alternate" type="text/html" title="Some handy notes for GCP pentesting" />
+    <published>2024-01-01T04:30:00-03:00</published>
+  
+    <updated>2024-01-01T04:30:00-03:00</updated>
+  
+    <id>http://localhost:4000/posts/gcp-pentesting-notes/</id>
+    <content src="http://localhost:4000/posts/gcp-pentesting-notes/" />
+    <author>
+      <name>Bruno Menna</name>
+    </author>
+
+  
+    
+    <category term="TOP_CATEGORIE" />
+    
+    <category term="SUB_CATEGORIE" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Hey folks!
+Here’s some notes that I use when validating some GCP service accounts and looking for SSRFs.
+
+How to authenticate in a service account using the GCP CLI
+gcloud auth activate-service-account 1234567-compute@developer.gserviceaccount.com --key-file=pathtofile.json --project=project_name
+
+The e-mail address you will copy from the json file, also the key file you will point to where the...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+

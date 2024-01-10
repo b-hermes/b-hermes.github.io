@@ -1,0 +1,38 @@
+[
+  
+  {
+    "title": "How to improve the search in Shodan",
+    "url": "/posts/facets-search/",
+    "categories": "",
+    "tags": "",
+    "date": "2024-01-01 04:30:00 -0300",
+    
+
+
+
+
+
+    
+    "snippet": "Shodan is a well-known recon tool, but in larger scopes, it has so many results that it’s hard to find something useful.In this image searching for hostnames from Microsoft we got +100k results. It...",
+    "content": "Shodan is a well-known recon tool, but in larger scopes, it has so many results that it’s hard to find something useful.In this image searching for hostnames from Microsoft we got +100k results. It would be a TON of work going through 20 pages of results trying to find something. That's when the 'facets' search comes into playFacets are a set of filters, that can help with your search. Some of the basic filters are ‘country’, ‘city’, ‘ssl cert’, and so on.Personally, the filter that helps me the most to find some interesting stuff for pentests and bug bounties is the ‘http.title’. In many cases there will be some repetitive title with an error message or a default response for pages without content.So instead of going through 20 pages of search, you will have a list that only shows 1 time each title, and it’s filtered by occurrences.By doing that we can go for the titles that only show up one or two times in the whole search, that’s where we can find something misconfigured, a subdomain that shouldn’t be public, internal dashboards, and many more.In this image, we can see that we have some titles that get our attention.From now on you just gotta dig and look for more."
+  },
+  
+  {
+    "title": "Some handy notes for GCP pentesting",
+    "url": "/posts/gcp-pentesting-notes/",
+    "categories": "TOP_CATEGORIE, SUB_CATEGORIE",
+    "tags": "TAG",
+    "date": "2024-01-01 04:30:00 -0300",
+    
+
+
+
+
+
+    
+    "snippet": "Hey folks!Here’s some notes that I use when validating some GCP service accounts and looking for SSRFs.How to authenticate in a service account using the GCP CLIgcloud auth activate-service-account...",
+    "content": "Hey folks!Here’s some notes that I use when validating some GCP service accounts and looking for SSRFs.How to authenticate in a service account using the GCP CLIgcloud auth activate-service-account 1234567-compute@developer.gserviceaccount.com --key-file=pathtofile.json --project=project_nameThe e-mail address you will copy from the json file, also the key file you will point to where the file it’s saved, and the project name you also can get in the file.List of some commands#List SSL certificates gcloud compute ssl-certificates list#List compute engine image disksgcloud compute images list#List compute engine instancesgcloud compute instances list#List bucketsgcloud storage ls#List buckets using gsutilgsutil ls#List containersgcloud container images list#List clustersgcloud container clusters list#List firewall rulesgcloud compute firewall-rules listAchieving SSRFs in AxiosWhen attempting to achieve SSRF in a GCP environment, it’s mandatory to have a ‘Metada-Flavor: Google’ header to your request.In Axios, you can add headers to your request by default, you just need to create an object in the request body and it’s done.Some usefull links and toolsGCP Pentesting - Hacktricks GCP Services - HacktricksAwesome GCP Pentesting"
+  }
+  
+]
+
